@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.fr.plugin.migration.pgsql</id>
+    <name><![CDATA[pgSQL迁移]]></name>
+    <active>yes</active>
+    <hidden>no</hidden>
+    <version>1.0.0</version>
+    <env-version>10.0</env-version>
+    <jartime>2019-2-28</jartime>
+    <vendor>dec.lidongy</vendor>
+    <description><![CDATA[]]></description>
+    <change-notes><![CDATA[]]></change-notes>
+    <!--    插件controller层的接口声明-->
+    <extra-decision>
+        <ControllerRegisterProvider class="com.fr.plugin.migration.pgsql.PGSQLControllerBridge"/>
+    </extra-decision>
+    <function-recorder class="com.fr.plugin.migration.pgsql.PGSQLControllerBridge"/>
+</plugin>
